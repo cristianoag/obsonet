@@ -1,0 +1,109 @@
+
+(rules PCB obsonet_1
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 6600)
+    (layer_rule Top
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.5)
+    )
+    (layer_rule Bottom
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.6)
+    )
+  )
+  (rule
+    (width 250.0)
+    (clear 200.2)
+    (clear 125.0 (type smd_to_turn_gap))
+    (clear 50.0 (type smd_smd))
+  )
+  (padstack "Via[0-1]_800:400_um"
+    (shape
+      (circle Top 800.0 0.0 0.0)
+    )
+    (shape
+      (circle Bottom 800.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_800:400_um" "Via[0-1]_800:400_um" default
+  )
+  (via 
+    "Via[0-1]_800:400_um-kicad_default" "Via[0-1]_800:400_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_800:400_um-Power" "Via[0-1]_800:400_um" Power
+  )
+  (via_rule
+    default "Via[0-1]_800:400_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_800:400_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_800:400_um-Power"
+  )
+  (class default
+    /~{SLTSL} "Net-(IC6-Pad2)" "Net-(LED2-PadA)" "Net-(LED1-PadA)" "/BROM-A16" "/BROM-A17" "Net-(IC4-Pad96)" /TPIN+
+    "/TPIN-" "Net-(CON2-Pad8)" "Net-(CON2-Pad7)" "Net-(CON2-Pad1)" "Net-(CON2-Pad2)" "Net-(CON2-Pad3)" "Net-(CON2-Pad4)" "Net-(CON2-Pad5)"
+    "Net-(CON2-Pad6)" /EEDO /EEDI /EECS "Net-(IC2-Pad7)" /EESK "Net-(IC4-Pad50)" "Net-(IC4-Pad51)"
+    "/TPOUT-" "Net-(C10-Pad1)" "Net-(C9-Pad1)" "Net-(C8-Pad2)" "Net-(C7-Pad2)" /TPOUT+ /A5 /A12
+    /A7 /A11 /A9 /~{H/L} /A10 /A6 /A8 /A13
+    /~{WE} "/~{CE_FLASH}" /~{OE} /~{AEN} /RSTDRV "/NC_14" "/NC_13" /~{BUSDIR}
+    /~{WR} /~{RESET} /A15 /~{RD} /~{MERQ} /A14 "Net-(IC4-Pad61)" "Net-(IC4-Pad62)"
+    "Net-(IC5-Pad7)" "Net-(IC4-Pad100)" "Net-(IC4-Pad99)" "Net-(IC4-Pad98)" "Net-(IC4-Pad97)" "Net-(IC4-Pad95)" "Net-(IC4-Pad94)" "Net-(IC4-Pad93)"
+    "Net-(IC4-Pad92)" "Net-(IC4-Pad91)" "Net-(IC4-Pad90)" "Net-(IC4-Pad88)" "Net-(IC4-Pad87)" "Net-(IC4-Pad85)" "Net-(IC4-Pad84)" "Net-(IC4-Pad82)"
+    "Net-(IC4-Pad81)" "Net-(IC4-Pad80)" "Net-(IC4-Pad75)" "/BROM-A14" "/BROM-A15" "/BROM-A18" "Net-(IC4-Pad68)" "Net-(IC4-Pad67)"
+    "Net-(IC4-Pad66)" "Net-(IC4-Pad63)" "Net-(IC4-Pad60)" "Net-(IC4-Pad56)" "Net-(IC4-Pad55)" "Net-(IC4-Pad54)" "Net-(IC4-Pad53)" "Net-(IC4-Pad49)"
+    "Net-(IC4-Pad48)" /D7 /D6 /D5 /D4 /D3 /D2 /D1
+    /D0 "Net-(IC4-Pad35)" /A4 /A3 /A2 /A1 /A0 "Net-(IC4-Pad4)"
+    "Net-(IC4-Pad3)" "Net-(IC4-Pad2)" "Net-(IC4-Pad1)" "Net-(IC1-Pad29)" "Net-(IC1-Pad27)" "Net-(IC1-Pad25)" "Net-(IC1-Pad22)" "Net-(IC1-Pad20)"
+    "Net-(IC1-Pad18)" "Net-(IC1-Pad16)" "Net-(IC1-Pad2)" "Net-(CON1-Pad50)" "Net-(CON1-Pad48)" "Net-(CON1-Pad44)" "Net-(CON1-Pad42)" "Net-(CON1-Pad16)"
+    "Net-(CON1-Pad8)" "Net-(CON1-Pad6)" "Net-(CON1-Pad2)" "Net-(CON1-Pad49)" "Net-(CON1-Pad11)" "Net-(CON1-Pad9)" "Net-(CON1-Pad7)" "Net-(CON1-Pad5)"
+    "Net-(CON1-Pad3)" "Net-(CON1-Pad1)"
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top Bottom)
+    )
+  )
+  (class "kicad_default"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 250.0)
+    )
+    (circuit 
+      (use_layer Top Bottom)
+    )
+  )
+  (class Power
+    GND VCC
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 400.0)
+    )
+    (circuit 
+      (use_layer Top Bottom)
+    )
+  )
+)
