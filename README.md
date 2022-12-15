@@ -18,6 +18,13 @@ I have created another version of the PCB that I called Obsonet Reloaded. The go
 
 On this repo you can find all software required to build and use the Obsonet Reloaded. There are also binary files with fixes for small issues we found during the project.
 
+## Resources
+
+I wrote an article providing more information on how to acquire components and build the new version of the cartridge. You can check it on my blog at [http://www.theretrohacker.com/2022/11/04/the-obsonet-cartridge-for-the-msx/](http://www.theretrohacker.com/2022/11/04/the-obsonet-cartridge-for-the-msx/).
+
+I also have a video in Portuguese showing the board, software, issues we faced during the remodel project as well as showing how to use it to download and use software on your MSX. Please check it at [https://www.youtube.com/watch?v=Ph_3VFheo2I](https://www.youtube.com/watch?v=Ph_3VFheo2I)
+
+
 ## License
 
 
