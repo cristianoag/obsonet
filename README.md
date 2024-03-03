@@ -5,6 +5,8 @@ The ObsoNET is the first network card created for the MSX. In 2004, the hardware
 
 The cartridge is based on the Realtek RTL8019AS chip and uses a flash memory to host and execute a BIOS that allows the use of network commands from the Nextor operating system (compatible with MSXDOS). An EPROM stores basic configuration data for the RTL8019AS chip and a side connector is used to plug a network cable to your MSX. A GAL16VB is used to implement the logic required to activate and expose the cartridge to the computer.
 
+The original version of the Obsonet was designed to fit a standard Konami cartridge case. The goal of this project is to create a new version of the cartridge that fits the standard Patola cartridge case available in Brazil as well as the standard Konami cases available from multiple vendors WW.
+
 ## Hardware 
 
 ### PCB
@@ -47,18 +49,23 @@ I have created another version of the PCB that I called Obsonet Reloaded. The go
 
 On this repo you can find all software required to build and use the Obsonet Reloaded. There are also binary files with fixes for small issues we found during the project.
 
+### BIOS
+
+The BIOS is the software that runs on the flash memory of the cartridge. It is responsible for initializing the hardware and providing a set of functions to the Nextor operating system.
+
 ## Resources
 
 I wrote an article providing more information on how to acquire components and build the new version of the cartridge. You can check it on my blog at [http://www.theretrohacker.com/2022/11/04/the-obsonet-cartridge-for-the-msx/](http://www.theretrohacker.com/2022/11/04/the-obsonet-cartridge-for-the-msx/).
 
 I also have a video in Portuguese showing the board, software, issues we faced during the remodel project as well as showing how to use it to download and use software on your MSX. Please check it at [https://www.youtube.com/watch?v=Ph_3VFheo2I](https://www.youtube.com/watch?v=Ph_3VFheo2I)
 
-
 ## License
 
 ![Open Hardware](images/ccans.png)
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+Original version build by Daniel Berdugo and Nestor Soriano. Reloaded version by Cristiano Goncalves. 
 
 * If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 * You may not use the material for commercial purposes.
