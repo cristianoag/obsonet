@@ -1,7 +1,7 @@
 # Obsonet Reloaded
 This is the GitHub repository to host all source files for the Obsonet Reloaded. 
 
-The ObsoNET is the first network card created for the MSX. In 2004, the hardware designer Daniel Berdugo and software developer Nestor Soriano joined forces to create the board that is the object of today's post. 
+The ObsoNET is the first network card created for the MSX. In 2004, the hardware designer Daniel Berdugo and software developer Nestor Soriano joined forces to create a cartridge to bring ETHERNET standard to the MSX line of computers. 
 
 The cartridge is based on the Realtek RTL8019AS chip and uses a flash memory to host and execute a BIOS that allows the use of network commands from the Nextor operating system (compatible with MSXDOS). An EPROM stores basic configuration data for the RTL8019AS chip and a side connector is used to plug a network cable to your MSX. A GAL16VB is used to implement the logic required to activate and expose the cartridge to the computer.
 
