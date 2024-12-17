@@ -66,7 +66,7 @@ I also have a video in Portuguese showing the board, software, issues we faced d
 
 This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-nc-sa/4.0/).
 
-Original version build by Daniel Berdugo and Nestor Soriano. Reloaded version by Cristiano Goncalves. 
+Original version build by Daniel Berdugo and Nestor Soriano. Reloaded version by The Retro Hacker. 
 
 * If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
 * You may not use the material for commercial purposes.
