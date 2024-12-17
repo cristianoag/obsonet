@@ -1,4 +1,5 @@
 # Obsonet Reloaded
+![alt text](labels/Label_Obsonet_pla_80x52.png)
 This is the GitHub repository to host all source files for the Obsonet Reloaded. 
 
 The ObsoNET is the first network card created for the MSX. In 2004, the hardware designer Daniel Berdugo and software developer Nestor Soriano joined forces to create a cartridge to bring ETHERNET standard to the MSX line of computers. 
