@@ -1,3 +1,5 @@
 (sym_lib_table
-  (lib (name obsonet_1-eagle-import)(type Legacy)(uri ${KIPRJMOD}/obsonet_1-eagle-import.lib)(options "")(descr ""))
+  (version 7)
+  (lib (name "obsonet_1-eagle-import")(type "Legacy")(uri "${KIPRJMOD}/obsonet_1-eagle-import.lib")(options "")(descr ""))
+  (lib (name "m29f400m")(type "KiCad")(uri "C:/Users/Cristiano/OneDrive/Personal/11. Electronics/Obsonet_Wireless/GitHub/obsonet-wireless/hardware/kicad/obsonet-wireless/libraries/m29f400m.kicad_sym")(options "")(descr ""))
 )
