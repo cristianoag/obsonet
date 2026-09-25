@@ -15,6 +15,9 @@ _autosave-*
 *-backups
 *backups
 
+# KiCad local history snapshots (managed as an internal Git repository)
+**/.history/
+
 # Netlist files (exported from Eeschema)
 *.net
 
